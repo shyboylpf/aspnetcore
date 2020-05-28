@@ -622,4 +622,3 @@ namespace Microsoft.AspNetCore.Antiforgery.Internal
         }
     }
 }
-#nullable restore
