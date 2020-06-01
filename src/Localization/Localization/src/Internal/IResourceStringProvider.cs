@@ -12,6 +12,6 @@ namespace Microsoft.Extensions.Localization
     /// </summary>
     internal interface IResourceStringProvider
     {
-        IList<string> GetAllResourceStrings(CultureInfo culture, bool throwOnMissing);
+        IList<string>? GetAllResourceStrings(CultureInfo culture, bool throwOnMissing);
     }
 }

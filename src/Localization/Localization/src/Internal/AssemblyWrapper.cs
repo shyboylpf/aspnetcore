@@ -25,8 +25,8 @@ namespace Microsoft.Extensions.Localization
 
         public Assembly Assembly { get; }
 
-        public virtual string FullName => Assembly.FullName;
+        public virtual string FullName => Assembly.FullName!;
 
-        public virtual Stream GetManifestResourceStream(string name) => Assembly.GetManifestResourceStream(name);
+        public virtual Stream? GetManifestResourceStream(string name) => Assembly.GetManifestResourceStream(name);
     }
 }
