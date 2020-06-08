@@ -7,7 +7,7 @@ $repoRoot = Resolve-Path "$PSScriptRoot/../.."
 
 try {
   # eng/common/msbuild.ps1 builds the Debug configuration unless there's a $Configuration variable. Match that here.
-  & "$repoRoot\build.ps1"  -ci:$ci -nobl -noBuildRepoTasks -noRestore -buildNative -configuration Debug
+  & "$repoRoot\build.ps1"  -ci:$ci -nobl -noBuildRepoTasks -noRestore -buildNative -noBuildNodeJS -configuration Debug
 
   Remove-Item variable:global:_BuildTool -ErrorAction Ignore
 
